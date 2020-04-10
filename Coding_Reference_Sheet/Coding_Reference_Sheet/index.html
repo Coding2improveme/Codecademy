@@ -1,0 +1,182 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>HTML/CSS Reference Sheet</h1>
+    
+    <h2>HTML Elements</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>  
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td><span class="code">&lt;html&gt;</span></td>
+          <td>HTML</td>
+          <td>The html element, the root of an HTML document, should be added after
+            the !DOCTYPE declaration. All content/structure for an HTML document should
+            be contained between the opening and closing html tags.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;head&gt;</span></td>
+          <td>Head</td>
+          <td>The document head.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;title&gt;</span></td>
+          <td>Title</td>
+          <td>The title element contains a text that defines the title of an HTML
+            document. The title is displayed in the browser’s title bar or tab in which the
+            HTML page is displayed. The title element can only be contained inside a
+            document’s head element.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;body&gt;</span></td>
+          <td>Body</td>
+          <td>Page content.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;h1&gt;</span></td>
+          <td>Text heading</td>
+          <td>A text header, denoted using the &lt;h1&gt;,&lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; tags.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;p&gt;</span></td>
+          <td>Paragraph</td>
+          <td>Denotes the paragraph section.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;a&gt;</span></td>
+          <td>Anchor</td>
+          <td>Denotes a link.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;ul&gt;</span></td>
+          <td>Unordered list</td>
+          <td>Starts a list of items denoted with bullet points.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;ol&gt;</span></td>
+          <td>Ordered list</td>
+          <td>Starts a list of numbered items.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;li&gt;</span></td>
+          <td>List item</td>
+          <td>Used to create each item in a list whether ordered or unordered.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;video&gt;</span></td>
+          <td>Video tag</td>
+          <td>The video element embeds a media player for video playback. The src
+            attribute will contain the URL to the video. Adding the controls attribute will
+            display video controls in the media player. Ex:&lt;video src="test-video.mp4" controls&gt;
+              Video not supported
+              &lt;/video&gt;</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;img&gt;</span></td>
+          <td>Image</td>
+          <td>HTML image elements embed images in documents. The src attribute
+            contains the image URL and is mandatory. Image is an empty element
+            meaning it should not have a closing tag. Ex: &lt;img src="image.png"&gt;</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;span&gt;</span></td>
+          <td>Span</td>
+          <td>The <span> element is an inline container for text and can be used to group
+            text for styling purposes. However, as <span> is a generic container to
+            separate pieces of text from a larger body of text, its use should be avoided if
+            a more semantic element is available.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;strong&gt;</span></td>
+          <td>Strong</td>
+          <td>The strong element highlights important, serious, or urgent text and
+            browsers will normally render this highlighted text in bold by default.</td>
+        </tr>
+        <tr>
+          <td><span class="code">comments</span></td>
+          <td>Comments</td>
+          <td>In HTML, comments can be added between an opening &lt;!-- and closing --
+            &gt; . Content inside of comments will not be rendered by browsers, and are
+            usually used to describe a part of code or provide other details.</td>
+        </tr>
+        <tr>
+          <td><span class="code">&lt;br&gt;</span></td>
+          <td>Line break</td>
+          <td>The line break element will create a line break in text and is especially
+            useful where a division of text is required, like in a postal address. The line
+            break element requires only an opening tag and must not have a closing tag.</td>
+        </tr>
+        <tr>
+          <td><span class="code">em</span></td>
+          <td>Emphasis</td>
+          <td>The emphasis element emphasizes text and browsers will usually
+            italicize the emphasized text by default.</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2>Attributes</h2>
+    
+    <table>
+      <thead>
+        
+        <tr>
+          <th>Attribute</th>
+          <th>Used with:</th>
+          <th>Description</th>
+        </tr>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td><span class="code">id</span></td>
+          <td>ID</td>
+          <td>In HTML, specific and unique id attributes can be assigned to different
+            elements in order to differentiate between them.When needed, the id value can be called upon by CSS and JavaScript to
+            manipulate, format, and perform specific instructions on that element and that
+            element only. Valid id attributes should begin with a letter and should only
+            contain letters ( a-Z ), digits ( 0-9 ), hyphens ( - ), underscores ( _ ), and periods
+            ( . ).</td>
+        </tr>
+        
+        <tr>
+          <td><span class="code">alt</span></td>
+          <td></td>
+          <td>An <img> element can have alternative text via the alt attribute. The
+            alternative text will be displayed if an image fails to render due to an incorrect
+            URL, if the image format is not supported by the browser, if the image is
+            blocked from being displayed, or if the image has not been received from the
+            URL. Ex: &lt;img src="path/to/image" alt="text describing image"&gt;</td>
+        </tr>
+        
+        <tr>
+          <td><span class="code">target</span></td>
+          <td>Target</td>
+          <td>The target attribute on an anchor element specifies where a hyperlink
+            should be opened. A target value of "_blank" will tell the browser to open
+            the hyperlink in a new tab in modern browsers, or in a new window in older
+            browsers or if the browser has had settings changed to open hyperlinks in a
+            new window.</td>
+        </tr>
+        
+        <tr>
+          <td><span class="code"></span></td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+      </tbody>  
+    </table> 
